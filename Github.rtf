@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww18320\viewh14560\viewkind0
+\deftab720
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Get Copilot to tutor you\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 You can set personal instructions so Copilot guides you through concepts instead of handing you full solutions. Here\'92s how:\'a0\
+In VS Code, open the 
+\f0\b Command Palette
+\f1\b0  and run:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 > Chat: New Instructions File\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 Then paste this into the new file:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 ---\
+applyTo: "**"\
+---\
+I am learning to code. You are to act as a tutor; assume I am a beginning coder. Teach me concepts and best practices, but don\'92t provide full solutions. Help me understand the approach, and always add: "Always check the correctness of AI-generated responses."\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 This will apply your tutoring instructions to any file you work on. You can manage or update your instructions anytime from the 
+\f0\b Chat > Instructions
+\f1\b0  view.\
+\
+\
+To disable Copilot code completion for a project (while keeping chat on), create a folder called 
+\f2\fs26 \strokec2 .vscode
+\f1\fs24 \strokec2  in the root of your project, and add a file named 
+\f2\fs26 \strokec2 settings.json
+\f1\fs24 \strokec2  with this content:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 \{\
+  "github.copilot.enable": \{\
+    "*": false\
+  \}\
+\}\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 This setting disables completions in your current workspace, giving you space to think through solutions before asking Copilot for help.\
+\
+Use Copilot Chat to:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Ask \'93Why is this function throwing an error?\'94 and get real-time explanations.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Use 
+\f2\fs26 /fix
+\f1\fs24  to highlight code and generate a potential fix.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Run 
+\f2\fs26 /tests
+\f1\fs24  to create test cases and verify your logic.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Try 
+\f2\fs26 /explain
+\f1\fs24  on cryptic errors to understand the root cause.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec2 You can even combine commands for deeper debugging \'97 for example, use 
+\f2\fs26 \strokec2 /explain
+\f1\fs24 \strokec2  to understand the problem, then 
+\f2\fs26 \strokec2 /fix
+\f1\fs24 \strokec2  to generate a solution, and 
+\f2\fs26 \strokec2 /doc
+\f1\fs24 \strokec2  to document it for your team.\
+\
+{\field{\*\fldinst{HYPERLINK "https://github.blog/open-source/new-to-open-source-heres-everything-you-need-to-get-started/"}}{\fldrslt https://github.blog/open-source/new-to-open-source-heres-everything-you-need-to-get-started/}}\
+{\field{\*\fldinst{HYPERLINK "https://docs.github.com/en/actions/get-started/quickstart"}}{\fldrslt https://docs.github.com/en/actions/get-started/quickstart}}\
+{\field{\*\fldinst{HYPERLINK "https://docs.github.com/en/pull-requests"}}{\fldrslt https://docs.github.com/en/pull-requests}}\
+{\field{\*\fldinst{HYPERLINK "https://skills.github.com/"}}{\fldrslt https://skills.github.com/}}\
+\
+\
+\
+\
+}
