@@ -23,10 +23,12 @@ All segments (pre-tokenized in TPR-DB) are parsed into dependency trees under Un
 
 **Example (1):** *The reporter who the senator attacked disliked the editor.*
 
-![Dependency Tree](fig1_dependency_tree.png)
-*Figure 1. Dependency parse tree for Example (1)*
+<p align="center">
+  <img src="fig1_dependency_tree.png" alt="Dependency Tree" /><br>
+  <em>Figure 1. Dependency parse tree for Example (1)</em>
+</p>
 
-```
+```text
  ID      Token       UPOS   Head   Deprel
   1        The        DET      2   det
   2   reporter       NOUN      7   nsubj
@@ -92,8 +94,12 @@ A BCR of 1.0 indicates that the translation maintains the same syntactic complex
 IDT_SUM=21   DLT_SUM=4   IDT+DLT_SUM=25   NND=3   LE=5
 ```
 
-![IDT and IDT+DLT Profile](fig2_idt_profile.png)
-*Figure 2. IDT and IDT+DLT profiles for Example (1). IDT peaks at "the" and "senator" (IDT=4), reflecting maximum storage cost. IDT+DLT peaks at "disliked" (IDT+DLT=5), where combined storage and integration cost is highest.*
+<p align="center">
+  <img src="fig2_idt_profile.png" alt="IDT and IDT+DLT Profile" /><br>
+  <em>Figure 2. IDT and IDT+DLT profiles for Example (1)</em>
+</p>
+
+> **Note:** IDT peaks at "the" and "senator" (IDT=4), reflecting maximum storage cost. IDT+DLT peaks at "disliked" (IDT+DLT=5), where combined storage and integration cost is highest.
 
 ### Aggregation
 
